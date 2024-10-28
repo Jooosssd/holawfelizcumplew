@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEEB; 
+}
+
+img{
+    padding-top: -300px;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FF69B4; /* Color del confeti */
+    opacity: 0.8;
+    animation: fall 3s forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg); /* Caer hacia abajo y girar */
+        opacity: 0; /* Desaparecer */
+    }
+}
+
+
+.message {
+    padding-top: 100px;
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    text-align: center;
+    animation: float 3s ease-in-out infinite; 
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Flota hacia arriba */
+    }
+}
+
+.video{
+    margin: 50px;
+}
